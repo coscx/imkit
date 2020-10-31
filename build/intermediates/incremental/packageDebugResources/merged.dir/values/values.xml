@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_readed">#4d98f6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="map_address">#fafafa</color>
+    <color name="tag_background">#c9d8d5</color>
+    <color name="tag_text">#787878</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="transparent">#00000000</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header_button_width">48dp</dimen>
+    <dimen name="header_common_height">46dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="pin_margin">19dp</dimen>
+    <dimen name="setting_checkbox_right_margin">14dp</dimen>
+    <dimen name="setting_item_checkbox_right_padding">32dp</dimen>
+    <dimen name="setting_item_height">47dp</dimen>
+    <dimen name="setting_item_left_padding">27dp</dimen>
+    <dimen name="setting_item_right_padding">27dp</dimen>
+    <dimen name="setting_left_padding">20dp</dimen>
+    <dimen name="setting_right_padding">20dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <string name="attach_file">File</string>
+    <string name="attach_location">Location</string>
+    <string name="attach_picture">Image</string>
+    <string name="attach_take_pic">Capture</string>
+    <string name="attach_video_call">Video call</string>
+    <string name="attach_voice_call">Voice call</string>
+    <string name="button_pushtotalk">Hold to talk</string>
+    <string name="button_send">Send</string>
+    <string name="conversation_encrypt_flag">(encrypt)</string>
+    <string name="file_size_limit_warning">File size limit:%dM</string>
+    <string name="gallery_chat_files">Chat Files</string>
+    <string name="gallery_image_save_failed">Image save failed!</string>
+    <string name="gallery_image_saved_to">Image saved to </string>
+    <string name="gallery_save_to_phone">Save to phone</string>
+    <string name="im_btn_copy">Copy</string>
+    <string name="im_btn_del">Delete</string>
+    <string name="im_btn_forward">Forward</string>
+    <string name="im_btn_reply">Reply</string>
+    <string name="im_btn_resend">Resend</string>
+    <string name="im_btn_revoke">Recall</string>
+    <string name="im_btn_tag">Tag</string>
+    <string name="im_title_choose">Choose</string>
+    <string name="message_change_group_name">Group name changed:\"%s\"</string>
+    <string name="message_create_group">You created \"%s\" group</string>
+    <string name="message_group_call_finished">Walkie Talkie session ended</string>
+    <string name="message_group_call_start">%s started a Walkie Talkie session</string>
+    <string name="message_group_disbanded">Group disbanded</string>
+    <string name="message_group_notice">Group notice:%s</string>
+    <string name="message_join_group">\"%s\" joined group</string>
+    <string name="message_leave_group">\"%s\" leaved group</string>
+    <string name="message_me_join_group">You joined \"%s\" group</string>
+    <string name="message_not_friend">You are not his/her friend</string>
+    <string name="message_not_my_friend">The other user is not your friend</string>
+    <string name="message_readed">readed</string>
+    <string name="message_readed_count">%d readed</string>
+    <string name="message_refuesed">Message sent, but be refused.</string>
+    <string name="message_revoked">%s revoked a message</string>
+    <string name="message_unread">unread</string>
+    <string name="message_unread_count">%d unread</string>
+    <string name="move_up_to_cancel">Finger up to cancel sending</string>
+    <string name="not_enough_storage_space">Not enough storage space.</string>
+    <string name="product_fotos_get_from">Get photo from:</string>
+    <string name="release_to_cancel">Finger release to cancel sending</string>
+    <string name="revoke_connection_disconnect">Service disconnected, the message revoke failed</string>
+    <string name="revoke_failure">Revoke failed!</string>
+    <string name="revoke_timed_out">More than two minutes, the message revoke failed</string>
+    <string name="unsupported_video_encoding_warning">This video codec is not supported.</string>
+    <string name="video_record_duration_warning">Video recording time is too short</string>
+    <string name="voice_record_duration_warning">Audio recording time is too short</string>
+    <string name="you">You</string>
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="imkit.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowActionBar">true</item>
+    </style>
+    <style name="imkit.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

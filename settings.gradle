@@ -1,3 +1,0 @@
-include ':imkit'
-include ':app'
-rootProject.name = "imimkit"
