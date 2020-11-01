@@ -110,7 +110,7 @@ public abstract class Outbox {
         }
         TypedFile typedFile = new TypedFile(type, file);
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-        imHttp.postFile(typedFile)
+        imHttp.postFile(typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                     @Override
@@ -149,7 +149,7 @@ public abstract class Outbox {
         TypedFile typedFile = new TypedFile(type, file);
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
         imHttp.postImages(type
-                , typedFile)
+                , typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Image>() {
                     @Override
@@ -162,7 +162,7 @@ public abstract class Outbox {
                         }
                         TypedFile typedFile = new TypedFile(type, new File(path));
                         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-                        imHttp.postFile(typedFile)
+                        imHttp.postFile(typedFile,msg.sender)
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                                     @Override
@@ -207,7 +207,7 @@ public abstract class Outbox {
         String secretFile = encryptFile(thumbPath, msg.receiver);
         TypedFile typedFile = new TypedFile("", new File(secretFile));
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-        imHttp.postFile(typedFile)
+        imHttp.postFile(typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                     @Override
@@ -217,7 +217,7 @@ public abstract class Outbox {
                         String secretVideoFile = encryptFile(path, msg.receiver);
                         TypedFile typedFile = new TypedFile("", new File(secretVideoFile));
                         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-                        imHttp.postFile(typedFile)
+                        imHttp.postFile(typedFile,msg.sender)
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                                     @Override
@@ -262,7 +262,7 @@ public abstract class Outbox {
         TypedFile typedFile = new TypedFile(type, file);
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
         imHttp.postImages(type
-                , typedFile)
+                , typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Image>() {
                     @Override
@@ -288,7 +288,7 @@ public abstract class Outbox {
         String type = "audio/amr";
         TypedFile typedFile = new TypedFile(type, new File(filePath));
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-        imHttp.postAudios(type, typedFile)
+        imHttp.postAudios(type, typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Audio>() {
                     @Override
@@ -325,7 +325,7 @@ public abstract class Outbox {
         String secretFile = encryptFile(filePath, msg.receiver);
         TypedFile typedFile = new TypedFile("", new File(secretFile));
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-        imHttp.postFile(typedFile)
+        imHttp.postFile(typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                     @Override
@@ -351,7 +351,7 @@ public abstract class Outbox {
         String secretFile = encryptFile(file, msg.receiver);
         TypedFile typedFile = new TypedFile("", new File(secretFile));
         IMHttpAPI.IMHttp imHttp = IMHttpAPI.Singleton();
-        imHttp.postFile(typedFile)
+        imHttp.postFile(typedFile,msg.sender)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<com.beetle.bauhinia.api.types.File>() {
                     @Override

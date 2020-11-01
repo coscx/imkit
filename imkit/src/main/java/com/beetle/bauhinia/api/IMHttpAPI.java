@@ -26,6 +26,7 @@ import retrofit.http.Header;
 import retrofit.http.Multipart;
 import retrofit.http.POST;
 import retrofit.http.Part;
+import retrofit.http.Query;
 import retrofit.mime.TypedFile;
 import rx.Observable;
 
@@ -86,14 +87,14 @@ public class IMHttpAPI {
         @POST("/device/unbind")
         Observable<Object> unBindDeviceToken(@Body PostDeviceToken token);
 
-        @POST("/images")
-        Observable<Image> postImages(@Header("Content-Type") String contentType, @Body TypedFile file);
+        @POST("/v1/chat/UploadAudios")
+        Observable<Audio> postAudios(@Header("Content-Type") String str, @Body TypedFile typedFile, @Query("memberId") long j);
 
-        @POST("/audios")
-        Observable<Audio> postAudios(@Header("Content-Type") String contentType, @Body TypedFile file);
-
+        @POST("/v1/chat/UploadFiles")
         @Multipart
-        @POST("/files")
-        Observable<File> postFile(@Part("file") TypedFile file);
+        Observable<File> postFile(@Part("file") TypedFile typedFile, @Query("memberId") long j);
+
+        @POST("/v1/chat/UploadImg")
+        Observable<Image> postImages(@Header("Content-Type") String str, @Body TypedFile typedFile, @Query("memberId") long j);
     };
 }
