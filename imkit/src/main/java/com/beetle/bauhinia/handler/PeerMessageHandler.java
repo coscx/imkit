@@ -73,7 +73,7 @@ public class PeerMessageHandler implements com.beetle.im.PeerMessageHandler {
 
         PeerMessageDB db = PeerMessageDB.getInstance();
         if (msg.isSelf) {
-            assert (msg.sender == uid);
+            //assert (msg.sender == uid);
             //消息由本设备发出，则不需要重新入库，用于纠正消息标志位
             repaireFailureMessage(imsg.getUUID());
             return true;
