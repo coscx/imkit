@@ -785,7 +785,7 @@ public class MessageActivity extends MessageAudioActivity implements
         } else if (message.content.getType() == MessageContent.MessageType.MESSAGE_LOCATION) {
             Log.i(TAG, "location message clicked");
             Location loc = (Location)message.content;
-            startActivity(MapActivity.newIntent(this, loc.longitude, loc.latitude));
+            //startActivity(MapActivity.newIntent(this, loc.longitude, loc.latitude));
         } else if (message.content.getType() == MessageContent.MessageType.MESSAGE_LINK) {
             Link link = (Link)message.content;
             Intent intent = new Intent();

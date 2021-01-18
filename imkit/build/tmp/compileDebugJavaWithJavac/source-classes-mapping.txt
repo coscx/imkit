@@ -69,7 +69,6 @@ com/beetle/bauhinia/api/body/PostDeviceToken.java
 com/beetle/bauhinia/MessageBaseActivity.java
  com.beetle.bauhinia.MessageBaseActivity
  com.beetle.bauhinia.MessageBaseActivity$1
- com.beetle.bauhinia.MessageBaseActivity$2
  com.beetle.bauhinia.MessageBaseActivity$GetUserCallback
  com.beetle.bauhinia.MessageBaseActivity$User
 com/beetle/bauhinia/MessageAudioActivity.java
@@ -85,7 +84,6 @@ com/beetle/bauhinia/XWCustomerMessageActivity.java
  com.beetle.bauhinia.XWCustomerMessageActivity$1
 com/beetle/bauhinia/activity/MapActivity.java
  com.beetle.bauhinia.activity.MapActivity
- com.beetle.bauhinia.activity.MapActivity$MyHandler
 com/beetle/bauhinia/tools/DeviceUtil.java
  com.beetle.bauhinia.tools.DeviceUtil
 com/beetle/bauhinia/view/MessageRowView.java
@@ -174,8 +172,6 @@ com/beetle/bauhinia/tools/AudioRecorder.java
  com.beetle.bauhinia.tools.AudioRecorder$1
 com/beetle/bauhinia/activity/LocationPickerActivity.java
  com.beetle.bauhinia.activity.LocationPickerActivity
- com.beetle.bauhinia.activity.LocationPickerActivity$1
- com.beetle.bauhinia.activity.LocationPickerActivity$MyHandler
 com/beetle/bauhinia/activity/MessageFileActivity.java
  com.beetle.bauhinia.activity.MessageFileActivity
  com.beetle.bauhinia.activity.MessageFileActivity$1
