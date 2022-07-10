@@ -89,6 +89,9 @@ public abstract class Outbox {
             sendRawMessage(imsg, imsg.content.getRaw());
         }
     }
+    public void sendFlutterMessage(IMessage imsg) {
+       sendRawMessage(imsg, imsg.content.getRaw());
+    }
 
 
     public boolean uploadFile(final IMessage msg, final String path) {
