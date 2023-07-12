@@ -61,7 +61,7 @@ allprojects {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.github.coscx:imlib:1.5'
+    implementation 'com.github.coscx:imlib:2.1'
     implementation 'com.github.coscx:imsdk:2.5'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
