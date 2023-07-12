@@ -329,7 +329,7 @@ public class CustomerManager {
     //顾客登录
     public void login() {
         //sqlite
-        if (CustomerMessageDB.SQL_ENGINE_DB) {
+
             try {
                 File p = context.getDir("db_" + this.clientID, context.MODE_PRIVATE);
                 File f = new File(p, "gobelieve.db");
@@ -342,12 +342,7 @@ public class CustomerManager {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
-//            CustomerMessageDB csDB = CustomerMessageDB.getInstance();
-//            String path = String.format("customer_%d", this.clientID);
-//            File dir = this.context.getDir(path, context.MODE_PRIVATE);
-//            csDB.setDir(dir);
-        }
+
         IMService.getInstance().setCustomerMessageHandler(CustomerMessageHandler.getInstance());
         IMService.getInstance().setToken(this.token);
         IMService.getInstance().setDeviceID(this.deviceID);
@@ -647,14 +642,5 @@ public class CustomerManager {
 
     }
 
-    public void startCustomerActivity(Context context, String title) {
-        Intent intent = new Intent();
-        intent.putExtra("token", this.token);
-        intent.putExtra("current_uid", this.clientID);
-        intent.putExtra("store_id", this.storeID);
-        intent.putExtra("app_id", this.appID);
-        intent.putExtra("title", title);
-        intent.setClass(context, XWCustomerMessageActivity.class);
-        context.startActivity(intent);
-    }
+
 }
